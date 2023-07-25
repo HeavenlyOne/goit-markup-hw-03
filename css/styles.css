@@ -25,7 +25,10 @@ body {
     margin: 0;
 }
 
+
 .logo {
+    margin-right: 93px;
+
     color: #000000;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -33,11 +36,39 @@ body {
     line-height: 1.17;
     text-decoration: none;
 }
+
 .accent {
     color: var(--accent-color);
 }
+
+.conteiner {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+/*    outline: 2px solid greenyellow;*/
+}
+
 /* Navigation */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
 .site-nav {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--primary-title-textcolor);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -48,6 +79,26 @@ body {
 
     text-decoration: none;
 }
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .list-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-contacts {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.nav-contacts .item + .item {
+    margin-left: 40px;
+}
+
 .link {
     color: var(--text-color);
     font-family: 'Roboto', sans-serif;
@@ -74,9 +125,19 @@ body {
 /* Main */
 /*hero*/
 .hero-space {
+    height: 600px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #2F303A;
 }
+
 .hero {
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 0;
     color: var(--primary-backgroung-white);
     font-size: 44px;
     font-weight: 900;
@@ -85,6 +146,12 @@ body {
     text-align: center;
 }
 .hero-button {
+    display: inline-block;
+    min-width: 200px;
+    padding: 10px 24px;
+    border-radius: 4px;
+    border: none;
+
     color: var(--primary-backgroung-white);
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
